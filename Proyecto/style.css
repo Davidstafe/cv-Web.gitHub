@@ -8,6 +8,7 @@
   --header-title-font: Poppins-Bold;
   --text-font: Poppins;
   --menu-font: Poppins-bold;
+  --section-tittle-font: Popiins;
 
 }
 
@@ -212,3 +213,54 @@ nav ul li a:hover {
 background-color: blue;
 }
   /*End cards section*/
+
+  /*Form section*/
+.contact{
+  background-image: url(./assets/Images/contact_g.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  flex-direction: column;
+}
+
+.contact-form{
+  border: 1px solid var(--light-color);
+  padding: 50px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-tittle-white{
+  text-transform: uppercase;
+  font-size: 26px;
+  border-bottom: 1px solid var(--section-tittle-font);
+  margin-bottom: 25px;
+  color: var(--light-color);
+
+  
+}
+.contact-input{
+  width: 100%;
+  height: 40px;
+  margin: 10px;
+  padding: 10px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  border:1px solid var(--light-color);
+  color: var(--light-color);
+}
+
+::placeholder{
+  color:var(--light-color);
+}
+
+::-moz-placeholder{
+  color: var(--light-color);
+}
+  /*End form section*/
