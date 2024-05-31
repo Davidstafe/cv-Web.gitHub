@@ -246,4 +246,43 @@ background-color: blue;
   margin-bottom: 25px;
   color: var(--light-color);
 }
+
+.contact-input{
+  width: 100%;
+  height: 40px;
+  margin: 10px 0px;
+  padding: 10px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid var(--light-color);
+  color: var(--light-color);
+}
+
+.contact-textarea{
+  color: var(--light-color);
+  background-color: transparent;
+  margin: 10px 0px;
+  padding: 10px;
+  border: 1px solid var(--light-color);
+  resize: none;
+  width: 100%;
+  height: 150px;
+
+}
+.contact-input::placeholder{
+  color: var(--light-color);
+}
+
+.contact-input::-moz-placeholder{
+  color: var(--light-color );
+}
+
+.contact-textarea::placeholder{
+  color: var(--light-color);
+}
+
+.contact-textarea::-moz-placeholder{
+  color: var(--light-color);
+}
 /*end form section/
