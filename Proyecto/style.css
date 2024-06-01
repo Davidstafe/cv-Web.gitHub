@@ -285,4 +285,15 @@ background-color: blue;
 .contact-textarea::-moz-placeholder{
   color: var(--light-color);
 }
+
+.contact-btn{
+  color: var(--light-color);
+  padding: 15px 60px;
+  border: 2px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+  text-decoration: none;
+  margin: 0px 5px;
+  max-width: 200px;
+  border-radius: 25px;
+}
 /*end form section/
