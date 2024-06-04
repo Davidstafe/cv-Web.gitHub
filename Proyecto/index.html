@@ -9,17 +9,17 @@
 </head>
 <body>
     <header>
-        <!----HEADER*/-->
+        <!-- HEADER -->
         
         <nav>
             <img src="./assets/images/logo.png" width="230" height="150" />
             <ul class="menu-screen">
                 <li><a href="#" class="selected">HOME</a></li>
-                <li><a href="#">Datos personales</a></li>
-                <li><a href="#">Experiencia laboral</a></li>
-                <li><a href="#">Estudios</a></li>
+                <li><a href="#datosPersonales">Datos personales</a></li>
+                <li><a href="#datosEstudios">Estudios</a></li>
+                <li><a href="#experienciaLaboral">Experiencia laboral</a></li>
             </ul>
-            <img class="menu-mobile" src="./assets/Images/menu_icon.png" width="36"height="21" >
+            <img class="menu-mobile" src="./assets/Images/menu_icon.png" width="36" height="21">
         </nav>
         <div class="header-content">
             <div class="header-ct">
@@ -27,68 +27,56 @@
                 <h1 class="header-title">Refrigeracion</h1>
                 <p>Resumen: Con sólida experiencia en producción y control de stock, y habilidades en operación de equipos y transporte, busco aplicar mis conocimientos como técnico electromecánico y mi pasión por la programación al sector de refrigeración. Comprometido y adaptable, estoy listo para contribuir con innovación y eficiencia.</p>
                 <div class="header-content-btns">
-                <a href="#" class="btn">Contactarme</a>
-                <a href="#" class="btn">Contratarme</a>
-            </div>
+                    <a href="#" class="btn">Contactarme</a>
+                    <a href="#" class="btn">Contratarme</a>
+                </div>
             </div>
             <img class="header-img" src="./assets/Images/menu3b.jpg" width="449" height="272">
         </div>
     </header>
-    <!--fin header*/-->
+    <!-- Fin del HEADER -->
 
-    <!--cards section-->
-    <section class="cards">
+    <!-- Sección de tarjetas -->
+    <section id="datosPersonales" class="cards">
         <div class="card">
-                <img src="./assets/Images/datosPersonales.png" width="100" height="100">
-                <h5>Datos Personales</h5>
-                   <p><div class="estudios">
-                
-                <p><li>Direccion:</li>  Azcuenaga 4687</p>
-                <p><li>Fecha de nacimiento:</li> 26/07/1990</p>
-                Título: Técnico electromecánico
-                
-                    <li>Licencia de conducir: B1</li>
-                     <li>Celular:342-4350848</li>
-                
-              </div></p>
+            <img src="./assets/Images/datosPersonales.png" width="100" height="100">
+            <h5>Datos Personales</h5>
+            <ul class="info-list">
+                <li><strong>Dirección:</strong> Azcuenaga 4687</li>
+                <li><strong>Fecha de nacimiento:</strong> 26/07/1990</li>
+                <li><strong>Licencia de conducir:</strong> B1</li>
+                <li><strong>Celular:</strong> 342-4350848</li>
+            </ul>
         </div>
         
         <div class="card">
-            <img class="img-exp" src="./assets/Images/experienciaLaboral.png"  width="100" height="100">
-            <h5>Experiencia laboral</h5>
-
-            <p><li>Purina petcare</li></p>
-            01/09/2012 - 01/08/2018
-            
-            <p><li>Remises Cullen y traslado de persona para ART</li></p>
-             01/08/2018 - 01/04/2020
-             
-             <p><li>Drogueria Kellerhof</li></p>
-            Fecha de ingreso: 01/08/2020 - 01/05/2021
-            <p><li>Diagramma</li>
-                  01/09/2021 ACTUAL
-            </p>
-       </div>
-
-        <div class="card">
             <img src="assets/Images/estudios.png" width="110" height="100" >
             <h5>Estudios</h5>
-            <p><div class="estudios">
-                
-                <p><li>Primaria:</li>   Escuela Malvinas Argentinas N° 1255</p>
-                <p><li>Secundaria:</li> Escuela Dr. Nicolas Avellaneda</p>
-                Título: Técnico electromecánico
-                
-                    <li>Idiomas: Portugués (finalizado en academia Vinicius de moraes)</li>
-                     <li>Inglés (pendiente el 3° año en el instituto E.P.I.E)</li>
-                
-              </div></p>
+            <ul class="info-list">
+                <li><strong>Primaria:</strong> Malvinas Argentinas N° 1255</li>
+                <li><strong>Secundaria:</strong> Dr. Nicolas Avellaneda (Título: Técnico electromecánico)</li>
+                <li><strong>Idiomas:</strong></li>
+                <ul>
+                    <li>Portugués (f academia Vinicius de moraes)</li>
+                    <li>Inglés (pendiente el 3er año en el instituto E.P.I.E)</li>
+                </ul>
+            </ul>
         </div>  
+
+        <div class="card">
+            <img class="img-exp" src="./assets/Images/experienciaLaboral.png"  width="100" height="100">
+            <h5>Experiencia laboral</h5>
+            <ul class="info-list">
+                <li><strong>Purina petcare:</strong> 01/09/2012 - 01/08/2018</li>
+                <li><strong>Remises Cullen y traslado de persona para ART:</strong> 01/08/2018 - 01/04/2020</li>
+                <li><strong>Drogueria Kellerhof:</strong> 01/08/2020 - 01/05/2021</li>
+                <li><strong>Diagramma:</strong> 01/09/2021 ACTUAL</li>
+            </ul>
+        </div>
     </section>
+    <!-- Fin de la sección de tarjetas -->
 
-    <!--End cards-->
-
-    <!--Section -->
+    <!-- Sección de contacto -->
     <section class="contact">
         <h3 class="section-tittle-white">Contactar</h3>
         <form class="contact-form" action="#" method="post">
@@ -97,19 +85,51 @@
             <input type="text" name="phone" id="phone" class="contact-input" placeholder="phone number"/>
             <div name="message" contenteditable="true" id="message" class="contact-textarea" placeholder="message"></div>
             <input type="submit" value="SEND" class="contact-btn"/>
-
         </form>
     </section>
+    <!-- Fin de la sección de contacto -->
 
-    <!--End section-->
-    <!--Footers-->
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
-       <p>"Gracias por sumergirse en mi mundo profesional. Espero que esta travesía haya sido tan emocionante para usted como lo ha sido para mí."</p> 
-        <div class="copyright">
-            <p>@ 2024 Todos los derechos reservados.</p>
+            <p>"Gracias por sumergirse en mi mundo profesional. Espero que esta travesía haya sido tan emocionante para usted como lo ha sido para mí."</p> 
+            <div class="copyright">
+                <p>@ 2024 Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
-    <!--End footer-->
+    <!-- Fin del footer -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('nav ul li a');
+            const cards = document.querySelectorAll('.cards .card');
+
+            links.forEach((link, index) => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    mostrarTarjeta(cards[index]);
+                });
+            });
+
+            function mostrarTarjeta(tarjeta) {
+                cards.forEach(card => card.style.display = 'none');
+                tarjeta.style.display = 'block';
+                tarjeta.scrollIntoView({ behavior: 'smooth' });
+            }
+
+            document.querySelector('nav img').addEventListener('click', function(event) {
+                event.preventDefault();
+                cards.forEach(card => card.style.display = 'block');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            document.querySelector('nav ul li:first-child a').addEventListener('click', function(event) {
+                event.preventDefault();
+                cards.forEach(card => card.style.display = 'block');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
 </body>
-</html>
+</html
