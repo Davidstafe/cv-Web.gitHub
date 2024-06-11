@@ -28,7 +28,7 @@
                 <p>Resumen: Con sólida experiencia en producción y control de stock, y habilidades en operación de equipos y transporte, busco aplicar mis conocimientos como técnico electromecánico y mi pasión por la programación al sector de refrigeración. Comprometido y adaptable, estoy listo para contribuir con innovación y eficiencia.</p>
                 <div class="header-content-btns">
                     <a href="#" class="btn">Contactarme</a>
-                    <a href="#" class="btn">Contratarme</a>
+                  
                 </div>
             </div>
             <img class="header-img" src="./assets/Images/menu3b.jpg" width="449" height="272">
@@ -82,19 +82,15 @@
     </section>
     <!-- Fin de la sección de tarjetas -->
 
-    <!-- Sección de contacto -->
-    <section class="contact">
-        <h3 class="section-tittle-white">Contactar</h3>
-        <form class="contact-form" action="contact_form.php" method="post">
-            <input type="text" name="name" id="name" class="contact-input" placeholder="name"/>
-            <input type="text" name="e-mail" id="e-mail" class="contact-input" placeholder="e-mail"/>
-            <input type="text" name="phone" id="phone" class="contact-input" placeholder="phone number"/>
-            <div name="message" contenteditable="true" id="message" class="contact-textarea" placeholder="message"></div>
-            <input type="submit" value="SEND" class="contact-btn"/>
-        </form>
-    </section>
-    <!-- Fin de la sección de contacto -->
-
+   <!-- Sección de contacto -->
+<section class="contact">
+    <img class="img-contact" src="assets/Images/1000174548.jpg" alt="imagen de contacto" >
+    <h3 class="section-tittle-white">Datos de contacto</h3>
+    <p><strong>Teléfono:</strong> 342-4350848</p>
+    <p><strong>Correo electrónico:</strong> david.fmdrm@gmail.com</p>
+    <!-- Agrega cualquier otro dato de contacto que desees mostrar -->
+</section>
+<!-- Fin de la sección de contacto -->
     <!-- Footer -->
     <footer>
         <div class="footer-content">
@@ -105,45 +101,6 @@
         </div>
     </footer>
     <!-- Fin del footer -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const links = document.querySelectorAll('nav ul li a');
-    const sections = document.querySelectorAll('.cards > div');
 
-    links.forEach((link) => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
-            const targetId = this.getAttribute('href');
-            sections.forEach(section => {
-                if (section.getAttribute('id') === targetId.substring(1)) {
-                    section.style.display = 'block';
-                    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                } else {
-                    section.style.display = 'none';
-                }
-            });
-        });
-    });
-
-    document.querySelector('nav img').addEventListener('click', function(event) {
-        event.preventDefault();
-        sections.forEach(section => section.style.display = 'block');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    document.querySelector('nav ul li:first-child a').addEventListener('click', function(event) {
-        event.preventDefault();
-        sections.forEach(section => section.style.display = 'block');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    document.querySelector('nav ul li:first-child a').addEventListener('click', function(event) {
-        event.preventDefault();
-        sections.forEach(section => section.style.display = 'block');
-        sections[0].scrollIntoView({ behavior: 'smooth', block: 'start' }); // Agregamos esta línea para hacer scroll a la primera sección
-    });
-});
-
-</script>
 </body>
 </html>

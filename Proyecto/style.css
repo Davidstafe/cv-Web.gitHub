@@ -339,6 +339,17 @@ nav ul li a:hover {
 
   /*End form section*/
 
+  /*Section contacto*/
+ 
+.img-contact {
+  width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto; /* Establece la altura automática para mantener la proporción */
+  border-radius: 50%; /* Hace que la imagen tenga bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una ligera sombra */
+  margin-bottom: 20px; /* Agrega un margen inferior para separar la imagen del texto */
+}
+  /*End section contacto*/
+
 /*Footer section*/
     footer{
       background-image: url(assets/Images/footer.jpg);
