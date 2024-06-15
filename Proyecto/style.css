@@ -1,3 +1,4 @@
+
 /*/configuraciones generales------ main settings*/
 :root {
   --primary-color: #4f4aa6;
@@ -339,14 +340,8 @@ nav ul li a:hover {
 
   /*End form section*/
 
-<<<<<<< Updated upstream
   /*Section contacto*/
  
-=======
-/* section contact*/
-
-
->>>>>>> Stashed changes
 .img-contact {
   width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
   height: auto; /* Establece la altura automática para mantener la proporción */
@@ -354,14 +349,8 @@ nav ul li a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una ligera sombra */
   margin-bottom: 20px; /* Agrega un margen inferior para separar la imagen del texto */
 }
-<<<<<<< Updated upstream
   /*End section contacto*/
 
-=======
-
-/*End section contact
-*/
->>>>>>> Stashed changes
 /*Footer section*/
     footer{
       background-image: url(assets/Images/footer.jpg);
