@@ -112,7 +112,7 @@ nav ul li a:hover {
 
 .btn:hover{
   background-color: var(--secondary-color);
-  border: 2px solid(var(--secondary-color));
+  border: 2px solid var(--secondary-color);
   text-align: center;
 }
 
@@ -355,7 +355,7 @@ nav ul li a:hover {
     footer{
       background-image: url(assets/Images/footer.jpg);
       background-size: cover;
-      background-repeat: none;
+      background-repeat: no-repeat;
       display: flex;
       justify-content: center;
       align-items: center;
