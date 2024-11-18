@@ -9,7 +9,7 @@
   --header-title-font: Poppins-Bold;
   --text-font: Poppins;
   --menu-font: Poppins-bold;
-  --section-tittle-font: Popiins;
+  --section-tittle-font: Poppins;
 
 }
 
@@ -138,47 +138,53 @@ nav ul li a:hover {
   cursor: pointer;
 }
 .menu-screen{
-display: flex;
+display: none;
 justify-content: flex-end;
-align-items: center;
+
 
 }
 
 .menu-screen li{
   padding: 10px;
+  text-align: right;
 }
-.nav-bar{
-  display: none;
-  flex-direction: column;
-  position: absolute;
-}
-.nav-bar.active{
+
+.menu-screen.show-menu{
   display: flex;
 }
+
 @media(max-width: 800px){
 .menu-screen{
   display: none;
-  flex-direction: column;
   position: absolute;
   top: 60px;
   right: 0;
   width: 100%;
-  z-index: 1000
-  ;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+transition: rigth 0.3s ease-in-out;
 }
 .bars{
   display: block;
 }
 .menu-screen.show-menu{
   display: flex;
+  right: 0;
 }
 .menu-screen li {
   width: 100% ;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
+  font-size: 20px;
 
 }
-
+.menu-screen.show-menu li a:hover{
+  color: var(--secondary-color);
+}
+.bars{
+  display: block;
+}
 
 }
 
