@@ -133,18 +133,52 @@ nav ul li a:hover {
 .header-img{
   margin: 25px;
 }
-
-.menu-mobile{
-  display: none;
-}
-
-@media(max-width: 800px){
-.menu-mobile{
-  display: flex;
+.bars{
+  display:none;
+  cursor: pointer;
 }
 .menu-screen{
-  display: none;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+
 }
+
+.menu-screen li{
+  padding: 10px;
+}
+.nav-bar{
+  display: none;
+  flex-direction: column;
+  position: absolute;
+}
+.nav-bar.active{
+  display: flex;
+}
+@media(max-width: 800px){
+.menu-screen{
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  z-index: 1000
+  ;
+}
+.bars{
+  display: block;
+}
+.menu-screen.show-menu{
+  display: flex;
+}
+.menu-screen li {
+  width: 100% ;
+  text-align: center;
+  padding: 15px;
+
+}
+
 
 }
 
